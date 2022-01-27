@@ -1,27 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import SelectWidget from "./SelectWidget";
 
 const Account = () => {
+    const [background, setBackground] = useState()
   return (
-    <div>
+    <div className=" mx-5 " >
       <h1>The account page</h1>
-      <form>
+      <form className="my-5" >
         <h1>Select Tent</h1>
         <div className="sections">
           <h4>Color</h4>
           <div className="widgetPiece"> 
-            <SelectWidget color="Red" />
-            <SelectWidget color="Blue"  />
-            <SelectWidget color="Green" />
+            <SelectWidget color="Red" background={background} setBackground={setBackground} />
+            <SelectWidget color="Blue" background={background} setBackground={setBackground} />
+            <SelectWidget color="Green" background={background} setBackground={setBackground} />
           </div>
         </div>
         <div className="sections">
           <h4>Make</h4>
           <div className="widgetPiece" >
-            <SelectWidget size = "small" />
-            <SelectWidget size = "medium" />
-            <SelectWidget size = "large" />
-            <SelectWidget size = "extralarge" />
+            <SelectWidget size = "small" background={background} setBackground={setBackground} />
+            <SelectWidget size = "medium"  background={background} setBackground={setBackground}/>
+            <SelectWidget size = "large" background={background} setBackground={setBackground} />
+            <SelectWidget size = "extralarge" background={background} setBackground={setBackground} />
           </div>
         </div>
 

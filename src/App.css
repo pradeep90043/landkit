@@ -15,6 +15,7 @@ img {
 }
 .sections{
   display: flex;
+  gap: 1rem;
 
 }
 .widgetPiece{
