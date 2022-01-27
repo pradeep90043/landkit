@@ -7,7 +7,7 @@ function SelectWidget(props) {
       <p
         className="widgets"
         onClick={props.setBackground(props.data)}
-        style={{backgroundClor : props.data === props.background ? "black" : "" } } 
+        style={{backgroundColor : props.data === props.background ? "black" : "" } } 
       >
         {props.data }
       </p>
