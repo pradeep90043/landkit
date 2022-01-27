@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SelectWidget from "./SelectWidget";
 
 const Account = () => {
@@ -9,7 +9,7 @@ const Account = () => {
 
   const colorsArr = ["red", "green", "blue"];
   const makeArr = ["small", "medium", "large", "extralarge"];
-  //   const color =
+  useEffect(()=>setShowResult(false),[selectMake,setSelectColored,name])
   const SubmitHandler = (e) => {
     e.preventDefault();
     setShowResult(true);
