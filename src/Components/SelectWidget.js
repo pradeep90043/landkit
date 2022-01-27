@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
 
-function SelectWidget(props) {
-  const color = props.background;
+function SelectWidget({data,selectColored}) {
+//   const color = props.background;
   return (
     <div>
       <p
-        className="widgets"
-        onClick={props.setBackground(props.data)}
-        style={{backgroundColor : props.data === props.background ? "black" : "" } } 
+        className= { selectColored ===data ? "widgets widgetPieceColor" : "widgets"}
       >
-        {props.data }
+        {data }
       </p>
     </div>
   );

@@ -21,3 +21,10 @@ img {
 .widgetPiece{
   display: flex;
 }
+.widgetPieceColor{
+  background-color: black;
+  color: white;
+}
+@media screen {
+  
+}
