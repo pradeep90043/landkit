@@ -17,18 +17,18 @@ const Account = () => {
         <div className="sections">
           <h4>Color</h4>
           <div className="widgetPiece"> 
-            <SelectWidget data="Red" background="balck" setBackground={setBackground} />
-            <SelectWidget data="Blue" background="balck" setBackground={setBackground} />
-            <SelectWidget data="Green" background="balck" setBackground={setBackground} />
+            <SelectWidget data="Red" background={background} setBackground={setBackground} />
+            <SelectWidget data="Blue" background={background} setBackground={setBackground} />
+            <SelectWidget data="Green" background={background} setBackground={setBackground} />
           </div>
         </div>
         <div className="sections">
           <h4>Make</h4>
           <div className="widgetPiece" >
-            <SelectWidget data = "small" background="balck" setBackground={setBackground} />
-            <SelectWidget data = "medium"  background="balck" setBackground={setBackground}/>
-            <SelectWidget data = "large" background="balck" setBackground={setBackground} />
-            <SelectWidget data = "extralarge" background="balck" setBackground={setBackground} />
+            <SelectWidget data = "small" background={background} setBackground={setBackground} />
+            <SelectWidget data = "medium"  background={background} setBackground={setBackground}/>
+            <SelectWidget data = "large" background={background} setBackground={setBackground} />
+            <SelectWidget data = "extralarge" background={background} setBackground={setBackground} />
           </div>
         </div>
 

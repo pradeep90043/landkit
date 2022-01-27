@@ -2,13 +2,12 @@ import React, { useEffect } from "react";
 
 function SelectWidget(props) {
   const color = props.background;
-//   useEffect(()=>props.setBackground(props.color||props.size),[color])
   return (
     <div>
       <p
         className="widgets"
-        onClick={props.setBackground(color)}
-        style={ {backgroundColor :color}}
+        onClick={props.setBackground(props.data)}
+        style={{backgroundClor : props.data = props.background ? "black" : "" } } 
       >
         {props.data }
       </p>
